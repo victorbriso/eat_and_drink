@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+.x-dashboard-dark .page-container .page-content .page-content-dark {
+    margin-top: 80px;
+}
+
+.lockscreen-container .lockscreen-box {
+    width: 240px;
+}
+.lockscreen-container .lockscreen-box .lsb-form {
+	width: 100%;
+}
+.lockscreen-container .alert {
+	margin-top: 15px;
+	padding: 4px;
+}
+.lockscreen-container .alert a {
+	display: none;
+}
+.fila-filtro {
+	margin-bottom: 20px;
+}
+.btn.btn-limpiar {
+	padding: 1px 5px;
+	line-height: normal;
+	margin-left: 5px;
+}
+input::placeholder { 
+	color: #fff !important; 
+	font-style: italic; 
+}
+a{
+	text-decoration: none;
+}
+
+.btn-file{
+    border-top-right-radius: 20px !important;
+}
+
+.fileinput-remove-button{
+	border-top-left-radius: 20px !important;
+}
+
+.file-preview-frame {
+    display: table;
+    margin: 5px;
+    height: auto;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    float: left;
+    text-align: center;
+}
+
+.center{
+	text-align: center !important;
+}
+
+span.requerido{
+	color: red;
+}
+
+p.msn_campo_requerido{
+	color: #b64645;
+	margin: 3px 0 -6px 0;
+}
+
+.ocultar{
+	display: none;
+}
+
+.mostrar{
+	display: block;
+}
+
+.no-border{
+	border-left: 0px !important;
+}
+
+.indicador-label{
+	-webkit-font-smoothing: antialiased;
+    margin: -16px 0px;
+    padding: 0px;
+    font-size: 11px;
+    font-style: italic;
+    color: darkgray;
+}

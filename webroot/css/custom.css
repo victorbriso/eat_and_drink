@@ -1,0 +1,1142 @@
+@font-face{font-family:"Roboto-Black";src:url("../font/Roboto-Black.ttf");}
+@font-face{font-family:"Roboto-Regular";src:url("../font/Roboto-Regular.ttf");}
+
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS GENERALES * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+body{
+    font-family: "Roboto-Regular";
+}
+.w-15{width: 15% !important; }
+.w-30{width: 30% !important; }
+.w-50{width: 50% !important; }
+.w-80{width: 80% !important; }
+
+.page-container {
+    background: url(../img/fondo_web.jpg);
+    background-size: cover;
+}
+.page-container .page-sidebar {
+    background: #23303b;
+    color: #2b3742;
+}
+.x-navigation {
+    background: transparent;
+}
+
+.x-navigation .x-navigation-control:before {
+    font-size: 25px;
+    top: 17px;
+    left: 12px;
+}
+.page-container .page-content {
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   /** color: #fff; */
+}
+.lista h2{color: #fff;}
+.page-sidebar .logo{
+    height: 50px;
+}
+.page-sidebar .logo img{width: 100%;}
+a{text-decoration: none;}
+.icon_click{cursor: pointer;}
+.center{text-align: center !important;}
+.display_center{display: flex;justify-content: center;align-items: center;}
+.right{text-align: right !important;}
+.no-activo{opacity: 0.3;}
+.no-habilitado{color: #a43f3e}
+.caja-activa{border: 1px solid #95b75d; }
+.caja-no-activa{border: 1px solid #a43f3e; }
+span.requerido{color: red;}
+p.msn_campo_requerido{color: #b64645;margin: 3px 0 -6px 0;}
+span.msn_campo_requerido{color: #b64645;margin: 3px 0 -6px 0;}
+.ocultar{display: none;}
+.opacity_0{opacity: 0;}
+.opacity_5{opacity: 0.5;}
+.mostrar{display: block;}
+.no-border{border-left: 0px !important;}
+.botones-add{border: 1px dashed #D5D5D5;}
+.icon{cursor: pointer;}
+.checkbox label:after{content: '';display: table;clear: both;}
+.checkbox .cr {position: relative;display: inline-block;border: 1px solid #a9a9a9;border-radius: .25em;width: 1.3em;height: 1.3em;float: left;margin-right: .5em;}
+.checkbox .cr .cr-icon {position: absolute;font-size: .8em;line-height: 0;top: 50%;left: 20%;}
+.checkbox label input[type="checkbox"] {display: none;}
+.checkbox label input[type="checkbox"] + .cr > .cr-icon {transform: scale(3) rotateZ(-20deg);opacity: 0;transition: all .3s ease-in;}
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {transform: scale(1) rotateZ(0deg);opacity: 1;}
+.checkbox label input[type="checkbox"]:disabled + .cr {opacity: .5;}
+hr {margin-top: 20px;margin-bottom: 20px;border: 0;border-top: 1px solid #FF7529;width: 80%;}
+hr.hr_pedido{margin-top: 0px; margin-bottom: 0px;}
+.pagination{padding: 30px;}
+.border-activo{border-top: 2px solid #FF7529 !important;border-bottom: 2px solid #FF7529 !important;}
+.panel-title {color: #fff;}
+.page-title h2 {color: #fff;}
+.pagar, .texto-alerta{color: #b64645;}
+.contenedor-salones {
+    margin-bottom: 20px;
+}
+.gif-espere{width: 50px;}
+.img_no_disponible{width: 285px; height: 158px;}
+.btn-ed{background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);color: #fff;}
+.btn-ed:hover{color: #fff;}
+.tr-resaltado{border: 2px dashed #b64645 !important;}
+.color-resaltado{color: #b64645 !important;}
+.td-resaltado{background-color: gainsboro !important;}
+.td-resaltado-edit{    background: rgba(241,40,56,1) !important;
+    background: -moz-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,40,56,1)), color-stop(45%, rgba(240,47,23,1)), color-stop(58%, rgba(243,60,28,1)), color-stop(99%, rgba(252,101,44,1))) !important;
+    background: -webkit-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    background: -o-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    background: -ms-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f12838', endColorstr='#fc652c', GradientType=1 ) !important;}
+.table.table-actions td {
+    line-height: 15px;
+}
+
+.select-css {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+    font-weight:normal;
+}
+
+.radio-material {
+  padding-right: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+label.radio-material {
+  position: relative;
+  top: 0px;
+}
+.radio-material:hover .inner {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: .5;
+}
+.radio-material input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.radio-material input:checked + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.radio-material input:checked + .outer {
+  border: 1px solid #D5D5D5;
+}
+.radio-material input:focus + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #E34724;
+}
+.radio-material .outer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid #D5D5D5;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.radio-material .inner {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 14px;
+  height: 14px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #E34724;
+  opacity: 0;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MENÚ SUPERIOR * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.menu-superior{
+    height: 50px;
+    background: #23303b;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.menu-superior .item-menu{
+    padding: 15px;
+    border-bottom: 0px;
+    line-height: 20px;
+    color: #ffffff;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.menu-superior .img-perfil img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.menu-superior .user-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3px;
+    color: #FFF;
+}
+
+.menu-superior-estado-pedido h4{
+  color: #fff;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MENÚ LATERAL * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.x-navigation > li.xn-logo > a:first-child {
+    background: rgba(241,40,56,1);
+    background: -moz-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,40,56,1)), color-stop(45%, rgba(240,47,23,1)), color-stop(58%, rgba(243,60,28,1)), color-stop(99%, rgba(252,101,44,1)));
+    background: -webkit-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -o-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -ms-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f12838', endColorstr='#fc652c', GradientType=1 );
+}
+
+.nombre-local-menu {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 16px !important;
+    margin-top: 18px !important;
+}
+
+.logo-ed{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    padding: 0px;
+    border-bottom: 0px;
+    color: #FFF;
+    height: 70px;
+    background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+
+}
+
+.logo-ed img{
+    width: 90%;
+}
+
+.x-navigation.x-navigation-custom > li.active > a.nav-padre {
+    background: transparent !important;
+    border-left: transparent !important;
+    border-bottom: 3px solid #FF7529 !important;
+}
+
+.x-navigation.x-navigation-custom > li > a:hover, .x-navigation.x-navigation-custom li.active > a {
+   background: rgba(241,40,56,1);
+    background: -moz-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,40,56,1)), color-stop(45%, rgba(240,47,23,1)), color-stop(58%, rgba(243,60,28,1)), color-stop(99%, rgba(252,101,44,1)));
+    background: -webkit-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -o-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -ms-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f12838', endColorstr='#fc652c', GradientType=1 );
+}
+
+.x-navigation.x-navigation-custom li > a:hover .fa, .x-navigation.x-navigation-custom li > a:hover .glyphicon {
+    color: #fff;
+}
+.x-navigation.x-navigation-custom > li > a {
+    font-size: 16px;
+}
+
+.x-navigation.x-navigation-custom > li.active > a {
+    border-left: 3px solid #FF7529;
+}
+
+.x-navigation.x-navigation-custom li.active > a .fa, .x-navigation.x-navigation-custom li.active > a .glyphicon {
+    color: #fff;
+}
+
+.x-navigation li.xn-openable:before {
+    font-size: 20px;
+}
+
+.x-navigation li > a {
+    font-size: 13px;
+}
+
+.x-navigation li > ul li.active > a {
+    font-weight: 600;
+}
+
+.widget.widget-item-icon .widget-item-left, .widget.widget-item-icon .widget-item-right {
+    /**width: 80px;*/
+}
+
+.imageLista .panel-body-image{
+    margin-bottom: 0px !important;
+}
+
+.imageLista .list-group-item{
+        padding: 2px 10px;
+}
+
+.imageLista .btn {
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.panel-body.panel-body-table .datatable {
+    border: 0px;
+    margin: 20px 0 20px 0;
+}
+
+.dataTables_wrapper {
+    padding: 25px 10px 25px 10px;
+}
+
+.panel-default .agregar-insumos{
+  margin-top: 20px;
+    border-top: 1px dashed #D5D5D5;
+    border-bottom: 1px dashed #D5D5D5 !important;
+}
+
+.btn-file{
+    background: transparent;
+    color: #656d78;
+    -moz-border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
+    border-radius: 12px;
+    border-width: 2px;
+    padding: 2px 10px;
+    font-weight: 600;
+}
+
+.file-preview{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-salon-activo{
+    border-bottom: 2px solid #95b75d !important;
+    margin-bottom: 20px;
+}
+
+.titulo-salon-no-activo{
+    border-bottom: 2px solid #b64645 !important;
+    margin-bottom: 20px;
+}
+
+.imagen-edit img{
+    width: 300px;
+}
+
+.mensaje_no_receta{
+    line-height: 15px !important;
+    text-align: left !important;
+}
+
+.contenedor_mensaje_insumo_rapido{
+     line-height: 15px !important;
+    text-align: left !important;
+    background: rgb(255, 117, 41);
+    color: #fff;
+    font-size: 14px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.mensaje_insumo_rapido{
+   line-height: 15px !important;
+   text-align: center !important;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA CAJA * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.contenedor-cajas-info{
+    padding: 20px;
+}
+
+.contenedor-caja{
+  min-height: 200px !important;
+}
+
+.contenedor-caja .widget{
+  margin-bottom: 10px !important;
+}
+
+.contenedor-caja .widget-data-left {
+    padding-right: 110px !important;
+}
+
+.contenedor-caja .widget-item-right {
+    width: 80px;
+}
+
+.contenedor-caja .btn.btn-xs, .btn-group-xs > .btn {
+    font-size: 12px;
+    padding: 4px 9px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.contenedor-caja .widget.widget-item-icon .widget-item-left, .widget.widget-item-icon .widget-item-right {
+    width: 90px;
+    height: 127px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+}
+
+.widget-int.num-count.total-caja.center {
+    font-size: 20px;
+}
+
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA MODALES * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.message-box.message-box-success .mb-container {
+    background: linear-gradient(to right, rgba(149, 183, 93,1) 0%, rgba(149, 183, 93,1) 0%, rgba(149, 183, 93,1) 27%, rgba(149, 183, 93,1) 49%, rgba(149, 183, 93,0.45) 77%, rgba(149, 183, 93,0.14) 93%, rgba(149, 183, 93,0) 100%) !important;
+}
+.iziModal{
+  z-index: 10000 !important;
+}
+
+.iziModal .iziModal-header {
+ background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+}
+
+.iziModal .iziModal-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.iziModal .iziModal-content .tile {
+    padding: 0px;
+}
+
+.iziModal .iziModal-content .tile .fa {
+    font-size: 35px;
+    line-height: 50px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA USUARIOS * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.panel.panel-default.contenedor-usuario {
+    height: 300px;
+}
+
+.contenedor-usuario .mas-detalles{
+    padding: 0px;
+}
+
+.contenedor-usuario .panel-body.profile {
+    height: 170px;
+}
+
+.contenedor-usuario .contact-info {
+    height: 75px;
+    overflow: hidden;
+}
+
+.contenedor-usuario .mas-detalles .btn{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.caja-roles .panel-body {
+    padding: 0px 15PX;
+}
+.caja-roles .form-group [class^="col-md-"] {
+    padding: 6px 10px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA ROLES DE USUARIOS * * * * * * * * * * * * * * * * * * * * * * */
+.contenedor-rol-usuario{
+    margin-bottom: 20px;
+}
+
+.contenedor-rol-usuario .tile {
+        margin-bottom: 5px;
+        font-size: 22px;
+}
+
+.contenedor-rol-usuario .btn-roles{
+    text-align: center;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA SAONES * * * * *  * * * * * * * * * * * * * * * * * * * * * * */
+.contenedor-salones .tile{
+    font-size: 20px;
+}
+.contenedor-salones .tile p{
+    text-align: left;
+}
+.contenedor-salones .tile p .subTile{
+    font-weight: 500;
+}
+
+.contenedor-view-categoria h3{
+  color: #000
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * * * * * */
+#modalComanda .page-content-wrap{
+       padding: 3%;
+}
+
+.contenedor-lista-pedido{
+    overflow: auto;
+}
+
+#contenedor-comanda .registar-comanda{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor-comanda .registar-comanda .form-validacion-comanda{
+    width: 30%;
+}
+
+#contenedor-comanda .sliding-menu a {
+    padding: 10px 15px 10px 15px;
+}
+
+#contenedor-comanda .sliding-menu a img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#contenedor-comanda .ico-cambiar-mesa{ 
+    cursor: pointer;
+}
+
+#productoCartaItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activo_cliente_comanda{
+    color: #FF7529;
+    font-weight: 800;
+}
+img.img_cliente_comanda{
+    width: 50px;
+    margin: 0px 5px 0px 0px;
+}
+img.img_add_producto_carta{
+    width: 70px !important;
+}
+.td_cliente_comanda{
+    padding: 0 !important;
+}
+
+.productoCarta_info{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 10px;
+}
+.titulo_ingredientes{
+    margin: -10px 0px -10px 0px;
+}
+.insumo_receta_producto_comanda {
+    margin: 0px 0px -15px 0px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.icon_actions img{
+    width: 25px;
+    cursor: pointer;
+}
+
+#contenedor-comanda .titulo-buscar-producto{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.titulo_mesa{
+    font-size: 16px;
+    color: #FF752C;
+    font-weight: 600;
+}
+
+input.campo_nombre_cliente_comanda{
+  /**background: transparent;
+    border: transparent;*/
+    width: 100%;
+}
+
+#contenedor-comanda .contenedor-lista-productos .btn-categorias-padre{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#contenedor-comanda .contenedor-lista-productos .btn-categorias-padre span{
+  font-size: 18px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * * * * * */
+
+.contenedor-info-comanda{
+    overflow: auto;
+}
+
+.lista-productos h3 {
+    margin: 10px 0 0px 0px !important;
+    font-size: 15px;
+}
+
+#contenedor-comanda .registar-comanda{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor-comanda .registar-comanda .form-validacion-comanda, #contenedor-comanda .registar-comanda .btn-vista-comanda{
+    width: 80%;
+    font-size: 22px;
+}
+
+#contenedor-comanda p.descripcion_producto{
+  margin-top: -10px;
+}
+
+#productoCartaItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activo_cliente_comanda{
+    color: #FF7529;
+    font-weight: 800;
+}
+img.img_cliente_comanda{
+    width: 50px;
+    margin: 0px 5px 0px 0px;
+}
+img.img_add_producto_carta{
+    width: 70px !important;
+}
+.td_cliente_comanda{
+    padding: 0 !important;
+}
+
+.productoCarta_info{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 10px;
+}
+
+.icon_actions img{
+    width: 20px;
+    cursor: pointer;
+}
+
+#contenedor-comanda .titulo-buscar-producto{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.titulo_mesa{
+    font-size: 16px;
+    color: #FF752C;
+    font-weight: 600;
+}
+
+input.campo_nombre_cliente_comanda{
+  /**background: transparent;
+    border: transparent;*/
+    width: 100%;
+}
+
+.contenedor-lista-categorias .list-group-item{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contenedor-lista-categorias .list-group-item:hover, .contenedor-lista-categorias .activo{
+    font-family: "Roboto-Regular";
+    color: #fff;
+    background: rgba(241,40,56,1);
+    background: -moz-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,40,56,1)), color-stop(45%, rgba(240,47,23,1)), color-stop(58%, rgba(243,60,28,1)), color-stop(99%, rgba(252,101,44,1)));
+    background: -webkit-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -o-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: -ms-linear-gradient(left, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f12838', endColorstr='#fc652c', GradientType=1 );
+}
+
+.contenedor-lista-categorias .badge {
+    padding: 3px 7px;
+    font-size: 28px;
+    background: transparent;
+    color: #000;
+}
+
+.panel .panel-body.panel-body-image {
+    margin-bottom: 0px;
+}
+
+.imageLista p.monto-comanda-lista{
+    font-size: 16px;
+    margin: -10px 0px 0px 0px;
+}
+
+.lista-productos h3{
+    color: #000;
+}
+
+.bootstrap-select > .btn {
+    font-size: 15px;
+}
+
+.form-group input{
+    font-size: 15px;
+}
+
+.form-group .nombre_ciente_comanda::placeholder{
+    color: #000;
+}
+
+.table > thead > tr > th {
+    font-size: 14px;
+}
+
+tr.fila_cliente {
+    font-size: 13px;
+}
+
+.icon_actions img {
+    margin-left: 7px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA CUENTA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * */
+
+#contenedor-cuenta-comandas .panel-activo{
+    background: linear-gradient(to right, #FF7529, #F12837);
+    background: rgba(248,80,50,1);
+    background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(255,117,41,1)), color-stop(27%, rgba(255,117,41,1)), color-stop(49%, rgba(255,117,41,1)), color-stop(77%, rgba(255,117,41,0.45)), color-stop(93%, rgba(241,111,92,0.14)), color-stop(100%, rgba(241,111,92,0)));
+    background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#f16f5c', GradientType=1 );
+}
+
+.data-general-comanda{
+    color: #000;
+    font-size: 15px;
+}
+
+#contenedor-cuenta-comandas h2.panel-title-activo{
+    color: #fff !important;
+    font-size: 20px;
+}
+
+#contenedor-cuenta-comandas .table{
+    margin-bottom: 0px;
+}
+
+#contenedor-cuenta-comandas .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  vertical-align: middle;
+}
+
+#contenedor-cuenta-comandas h3{
+    margin: 0px 0 !important; 
+}
+
+#contenedor-cuenta-comandas .switch {
+    margin: 0 30px;
+}
+
+#contenedor-cuenta-comandas .opciones-cuenta{
+   margin: 10px 0px 30px 0px;
+   text-align: center;
+}
+
+#contenedor-cuenta-comandas .switch .title-radio{
+    font-size: 20px;
+}
+
+#contenedor-cuenta-comandas .div-generar-cuenta{
+    border: 1px dotted #ccc;
+    padding: 10px;
+}
+
+#contenedor-cuenta-comandas .div-generar-cuenta-producto{
+    border: 1px dotted #ccc;
+    padding: 10px;
+}
+
+.datos-totales h2,.datos-totales h3, .datos-totales h4, .datos-totales h5{
+    color: #434a54 !important;
+}
+
+.pagar, .texto-alerta {
+    color: #b64645;
+}
+
+#contenedor-cuenta-comandas .nombre-producto{
+  font-size: 15px;
+    font-weight: 600;
+}
+
+ 
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA LISTA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * * */
+#contenedor-lista-comandas .correlativo-mesa{
+    font-size: 22px;
+}
+
+#contenedor-lista-comandas .nombre-mesa{
+    font-size: 13px;
+    margin-top: -8px;
+}
+
+#contenedor-lista-comandas .tile{
+    margin-bottom: 2px;
+    padding: 2px 0px;
+} 
+#contenedor-lista-comandas .tile .fa {
+    font-size: 16px;
+    line-height: 0px;
+}
+
+#contenedor-lista-comandas .btn-cuenta-comanda{
+    width: 100%;
+    font-size: 17px;
+}
+
+#contenedor-lista-comandas .contenedor-salones .tile p {
+    text-align: center;
+}
+
+p.monto-comanda-lista{
+    font-size: 14px;
+    color: green;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA CUENTA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * */
+#contenedor-cuenta-comandas .panel-activo{
+    background: linear-gradient(to right, #FF7529, #F12837);
+    background: rgba(248,80,50,1);
+    background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(255,117,41,1)), color-stop(27%, rgba(255,117,41,1)), color-stop(49%, rgba(255,117,41,1)), color-stop(77%, rgba(255,117,41,0.45)), color-stop(93%, rgba(241,111,92,0.14)), color-stop(100%, rgba(241,111,92,0)));
+    background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(255,117,41,1) 0%, rgba(255,117,41,1) 27%, rgba(255,117,41,1) 49%, rgba(255,117,41,0.45) 77%, rgba(241,111,92,0.14) 93%, rgba(241,111,92,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#f16f5c', GradientType=1 );
+}
+
+.data-general-comanda{
+    color: #000;
+    font-size: 15px;
+}
+
+#contenedor-cuenta-comandas h2.panel-title-activo{
+    color: #fff !important;
+    font-size: 20px;
+}
+
+#contenedor-cuenta-comandas .table{
+    margin-bottom: 0px;
+}
+
+#contenedor-cuenta-comandas h3{
+    margin: 0px 0 !important; 
+}
+
+#contenedor-cuenta-comandas .switch {
+    margin: 0 30px;
+}
+
+#contenedor-cuenta-comandas .opciones-cuenta{
+   margin: 10px 0px 30px 0px;
+   text-align: center;
+}
+
+#contenedor-cuenta-comandas .switch .title-radio{
+    font-size: 20px;
+}
+
+#contenedor-cuenta-comandas .div-generar-cuenta{
+    border: 1px dotted #ccc;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+#contenedor-cuenta-comandas .div-generar-cuenta-producto{
+    border: 1px dotted #ccc;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA CATEGORIAS * * * * *  * * * * * * * * * * * * * * * * * * * * * */
+a.producto_categoria{
+    color: #000;
+    text-decoration: none !important;
+}
+
+.producto_categoria:hover{
+    color: #FF7529;
+    font-size: 17px !important;
+}
+
+.categoria-producto-carta hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.img_qr_mesa{
+    width: 100px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * ESTILOS PARA MODAL PAGO CUENTA * * * * * * * * * * * * * * * * * * * * * * */
+#modalIngresarPagoCuenta .total_consumo{
+    font-size: 20px;
+}
+
+#modalIngresarPagoCuenta .total_cuenta{
+    font-size: 20px;
+    color: #89ad4d;
+}
+
+#modalIngresarPagoCuenta  .total_restante{
+    font-size: 20px;
+    color: #b64645;
+}
+
+#modalIngresarPagoCuenta .total_sobrante{
+    font-size: 20px;
+    color: #3fbae4;
+}
+
+.pago_select, .pago_select_nuevo{
+  margin: 20px 0px;
+}
+
+.img_borrar_metodo_pago img{
+      width: 25px;
+    margin-top: 25px; 
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS LISTA PRECIOS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.campo_lista_precio{width: 100px;}
+
+.table-lista_precio table{
+  display: block;
+  overflow-x: auto;
+}
+
+.table-lista_precio .static {
+  position: absolute;
+   padding: 4px 10px 14px 10px !important;
+}
+
+.table-lista_precio .tr-lista-producto{
+  height: 45px;
+}
+
+.table-lista_precio .statict-th{
+    height: 53px;
+    line-height: 55px;
+    width: 140px;
+
+}
+
+.table-lista_precio .first-col {
+  padding-left: 140px !important;
+}
+
+.fila-columna-hover{
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.fila-columna-hover-position{
+    background: linear-gradient(to right, rgba(241,40,56,1) 0%, rgba(240,47,23,1) 45%, rgba(243,60,28,1) 58%, rgba(252,101,44,1) 99%) !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS PARA PAGINA DE PAGOS PASARELA.CTP * * * * * * * * * * * * * * * * * * * * * * */
+
+@media (max-width: 450px) {
+    body{
+        background: #BDBDBD;
+    }
+    h1{
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+        color:#FF4000;
+        padding-top: 10%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #inicio {
+        background: #E6E6E6;
+        border-radius: 5px;
+        width: 80%;
+        margin: 0 auto;
+        font-style: italic;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .tabla_pasarela {
+        margin:0 auto;
+        padding: 10px;
+        text-align: center;
+        width: 80%;
+        border-color: none;
+        margin-top: 10px;
+    }
+
+    .total {
+        text-decoration: underline;
+        font-weight: bold;
+        color:#000;
+    
+    }
+
+    .tipo_pago {
+        margin: 5px;
+    }
+
+}
+
+@media (min-width: 451px) {
+    h1{
+        font-size: 5pt;
+        text-decoration: underline;
+    }
+
+    #pruebas {
+        background: #fff;
+    }
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS PARA PAGINA DE PAGOS CARTA/INDEX.CTP * * * * * * * * * * * * * * * * * * * * * * */
+
+#carta{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-decoration: underline;
+    font-size: 40pt;
+    text-align: center;
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MOBILE PARA @MEDIA 1024px * * * * * * * * * * * * * * * * * * * * * * * * *  * * */
+
+@media (max-width: 1024px) {
+
+  .page-sidebar .logo img {
+      width: 16%;
+  }
+
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MOBILE PARA @MEDIA 992px * * * * * * * * * * * * * * * * * * * * * * * * *  * * */
+
+/*@media (max-width: 992px) {
+}*/
+
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MOBILE PARA @MEDIA 768 * * * * * * * * * * * * * * * * * * * * * * * * *  * * */
+
+@media (max-width: 768px) {
+  .page-sidebar .logo img {
+      width: 16%;
+  }
+
+  .menu-superior {
+    overflow: inherit;
+    background: transparent;
+  }
+
+  .menu-superior .user-login{
+     margin-top: 5px;
+  }
+
+  .page-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * ESTILOS MOBILE PARA @MEDIA 576 * * * * * * * * * * * * * * * * * * * * * * * * *  * * */
+
+@media (max-width: 576px) {
+  .page-sidebar .logo img {
+      width: 30%;
+  }
+}
+
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 375 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 375px) { 
+}

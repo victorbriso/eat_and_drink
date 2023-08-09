@@ -1,0 +1,82 @@
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 1024 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) { 
+
+	.contenedor {
+	    margin-top: 80px;
+	}
+
+	.titulo_3 {
+	    font-size: 30px;
+	}
+
+	.login .form-login .cabecera img {
+    	width: 110px;
+   	}
+
+	.login .form-login {
+	    width: 90%;
+	}
+
+	.login .form-login {
+	    padding: 20px;
+	   }
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 768 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 768px) { 
+	.contenedor {
+	    display: inherit;
+	    margin-top: 5px;
+	}
+
+	.titulo {text-align: center;}
+	.titulo_1 {font-size: 40px;}
+	.titulo_2 { font-size: 50px;}
+	.titulo_3 {font-size: 28px;}
+
+	.login {
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 70px;
+	}
+
+	
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 375 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 375px) { 
+	.contenedor {
+	    display: inherit;
+	    margin-top: 20px;
+	}
+
+	.titulo {text-align: center;}
+	.titulo_1 {font-size: 30px;}
+	.titulo_2 { font-size: 40px;}
+	.titulo_3 {font-size: 18px;}
+
+	.login {
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 70px;
+	}
+
+	.login .form-login .cabecera img {
+    	width: 80px;
+   	}
+   	.login .form-login {
+	    width: 100%;
+	}
+	.h2, h2 {
+    	font-size: 25px;
+    	margin-top: -5px;
+    	display: none;
+   	}
+
+   	.form-group {
+	    margin-bottom: 3px;
+	}
+}

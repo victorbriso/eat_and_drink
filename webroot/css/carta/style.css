@@ -1,0 +1,207 @@
+body, html{
+	width: 100%;
+}
+.pregunta-edad{
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.respuesta-edad{
+	text-align: center;
+}
+.separacion{
+	width: 100%;
+	height: 10px !important;
+}
+.separacion-5{
+	width: 100%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height: 3px;
+	background-color: none;
+}
+.btn-simple{
+	border: solid silver;
+	border-radius: 5px;
+	background-color: none;
+}
+.es{
+	background-image: url(../img/banderas/espana.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.en{
+	background-image: url(../img/banderas/inglaterra.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.br{
+	background-image: url(../img/banderas/brasil.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bandera{
+	width: 33%;
+	height: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-al-cen{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center !important;
+}
+.separacion-color{
+	width: 100%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height: 3px;
+	background-color: #BEFC05;
+}
+.bandera-idioma{
+	width: 50px;
+}
+.img-slider{
+	height: 400px;
+}
+.titulo-noticias{
+	text-align: center;
+	text-decoration: underline;
+}
+.contenedor-noticias{
+	margin-top: 5px;
+}
+.suscripcion{
+	margin-top: 10px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	border-top: solid silver;
+	border-bottom: solid silver;
+	height: 300px;
+	width: 100%;
+	background-color: #757575;
+	background-image: url('../img/slider/4.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-suscripcion{
+	text-align: center;
+	text-decoration: underline;
+	color: #fff;
+}
+.footer{
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 0px !important;
+	height: 100px;
+	width: 100%;
+	background-color: #000;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer2{
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 0px !important;
+	border-top: solid silver;
+	height: 50px;
+	width: 100%;
+	background-color: #757575;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista-menu li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    color:white;
+}
+.rrss{
+	max-height: 50px;
+	max-width: 50px;
+}
+.vbs{
+	text-decoration: none;
+	color: #fff;
+	text-align: right !important;
+}
+.vbs a{
+	text-decoration: none;
+	color: #fff;
+	text-align: right !important;
+}
+.legales{
+	text-align: center;
+	color: #fff;
+}
+.carousel img {
+    min-width: 100%;
+}
+.tabla-suscripcion{
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 5px;
+}
+.txt-slider-bl{
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+}
+.txt-slider-wh{
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 5px;
+}
+.general-titulos{
+  color: #A36379;  
+}
+.contenedor-titulo-botella{
+	background-color: #A36379;
+}
+.contenedor-titulo-botella h4{
+	color: #fff;
+}
+.padd-r-0{
+	padding-right: 0px !important;
+}
+.general-titulos-blanco{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center !important;
+    background-color: #fff;
+}
+.general-titulos-blanco h4{
+    color: #A36379;
+}
+.fin-botella{
+	background-color: #A36379;
+	position: relative;
+	margin-right: 0px;
+}
+.fin-botella-2{
+        background-color: #A36379;
+    }
+    .inicio-botella-2{
+        width: 160px;
+    }
+    .titulo-botella{
+        width: 1%;
+        white-space: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }

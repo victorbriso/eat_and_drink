@@ -1,0 +1,60 @@
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 1024 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) { 
+
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 768 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 768px) { 
+	/******************************************************************************************************************/
+	/* * * * * * * * * * * * * * * * * * * ESTILOS PARA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * * * * * */
+	.comanda-layout-mobile{
+		margin-top: 70px;
+	}
+}
+
+/******************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 375 px * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 375px) { 
+	/******************************************************************************************************************/
+	/* * * * * * * * * * * * * * * * * * * ESTILOS PARA COMANDAS * * * * *  * * * * * * * * * * * * * * * * * * * * * */
+	.comanda-layout-mobile .sliding-menu{
+		height: 56vh !important;
+   		 overflow: auto;
+	}
+
+	.comanda-layout-mobile img.img_productoCarta{
+		width: 80px;
+	}
+
+	.comanda-layout-mobile img.img_add_producto_carta {
+	    width: 100% !important;
+	}
+
+	.comanda-layout-mobile h3, .h3 {
+	    margin-bottom: 10px;
+	    font-size: 13px;
+    }
+
+    .comanda-layout-mobile .sliding-menu a .fa, .sliding-menu a .glyphicon {
+    	font-size: 10px;
+   	}
+
+   	.modal-comanda-layout-mobile .contenedor-lista-pedido {
+	    height: 90vh !important;
+	    overflow: auto;
+	}
+
+   	.comanda-layout-mobile #footer {
+        height: 40px;
+	    bottom: 0;
+	    width: 100%;
+	    color: #fff;
+	    background: #000;
+	    position: fixed;
+	}
+	.productoCarta_info {
+	    margin-left: 20px;
+	}
+}
