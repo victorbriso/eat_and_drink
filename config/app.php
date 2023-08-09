@@ -11,8 +11,8 @@ use Cake\Mailer\TransportFactory;
 TransportFactory::setConfig('gmail', [
     'host' => 'smtp-relay.gmail.com',
     'port' => 587,
-    'username' => 'contacto@ceorestobar.cl',
-    'password' => 'mknilwufvgrzuijb',
+    'username' => '****',
+    'password' => '****',
     'className' => 'Smtp',
     'tls' => true,
 ]);
@@ -251,8 +251,8 @@ return [
         /*'gmail' => [
             'host' => 'smtp.gmail.com',
             'port' => 587,
-            'username' => 'contacto@ceorestobar.cl',
-            'password' => 'mknilwufvgrzuijb',
+            'username' => '****',
+            'password' => '****',
             'className' => 'Smtp',
             'tls' => true,
 
